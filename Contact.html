@@ -1,0 +1,120 @@
+<!-- Created by David Winget (usma94@gmail.com)-->
+<!-- Purpose: The purpose of this web page is to provide contact information. -->
+
+<!-- I used the https://www.w3schools.com/tags/ website to get a description of each HTML tag used and see an example of its use. -->
+<!-- I used the bootstrapious.com website for a contact form template (https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form). -->
+<!-- The GitHub, BitBucket, LinkedIn and Facebook logos are copyrighted by their respective websites. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/Winget_David.css" rel="stylesheet">
+		<title>Dave - Contact Me</title>
+</head>
+
+<body>
+	<header class="header_style">
+				
+		<div class="container-fluid">
+				
+			<div class="row">
+					<div id="navbarback" class="col-xs-12 navibarbackgrnd navbar navbar-inverse">
+						<ul id="navibar" class="nav navbar-nav" >
+							<li><a href="winget_david.html">Dave's Website</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="math_page.html">Math</a></li>
+							<li class="active"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+		
+				<div class="row" id="fullname">
+					<div class="col-xs-12 namebackgrd">
+						<h1>David G. Winget</h1>
+					</div>
+				</div>
+				
+				<br> <br> <br> <br> <br> <br>			
+		</div>
+	</header>
+
+	<section class="container-fluid blackbgrd">
+
+		<div class="row contact">
+			<div class="col-xs-12 contacttext">
+				<h2 id="contact_me">Contact Me On:</h2>
+				<br>
+				<a href="https://bitbucket.org/DWinget">
+					<img class="contact_image" src="img/bitbucket.png" alt="Bitbucket Link">
+				</a>
+				<a href="https://github.com/DWinget">
+					<img class="contact_image" src="img/Github-Transparent.png" alt="GetHub Link">
+				</a>
+				<a href="img/nolinkedin.jpg">
+					<img class="contact_image" src="img/linkedinlogo.png" alt="LinkedIn Link">
+				</a>
+				<a href="img/NoFacebook.jpg">
+					<img class="contact_image" src="img/logofacebook.png" alt="Facebook Link">
+				</a>
+				<a href="mailto:S528390@nwmissouri.edu">
+					<img class="contact_image" src="img/email-logo.png" alt="Email Link">
+				</a>
+				<hr>
+			</div>
+			<hr>
+		</div>
+
+		<div class="controls">
+			<div class="row">
+				<div class="col-xs-4 form-group">
+					<label class="formtext" for="form_name">First name</label>
+					<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name">
+				</div>
+				<div class="col-xs-4 form-group">
+					<label class="formtext" for="form_lastname">Last name</label>
+					<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name">
+				</div>
+				<div class="col-xs-4 form-group">
+					<label class="formtext" for="form_email">Email</label>
+					<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 form-group blackbgrd">
+					<label class="formtext" for="form_message">Message</label>
+					<textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="3" required="required" data-error="Please,leave a message."></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 blackbgrd">
+					<input type="submit" class="btn btn-success btn-send blackbgrd" value="Send message">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer_style">
+		<div class="container-fluid">
+			<div class="row">
+				<p class="col-xs-12 paragraph">Contact information: 
+					<a href="mailto:S528390@nwmissouri.edu">
+					S528390@nwmissouri.edu
+					</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

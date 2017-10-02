@@ -1,0 +1,117 @@
+<!-- Created by David Winget (usma94@gmail.com)-->
+<!-- Purpose: The purpose of this web page is to provide math calculations. -->
+
+<!-- I used the https://www.w3schools.com/tags/ website to get a description of each HTML tag used and see an example of its use. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/Winget_David.css" rel="stylesheet">
+		<title>Dave's Math Page</title>
+</head>
+
+<body>
+	<header class="header_style">
+				
+		<div class="container-fluid">
+				
+			<div class="row">
+					<div id="navbarback" class="col-xs-12 navibarbackgrnd navbar navbar-inverse">
+						<ul id="navibar" class="nav navbar-nav" >
+							<li><a href="winget_david.html">Dave's Website</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li class="active"><a href="math_page.html">Math</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+		
+				<div class="row" id="fullname">
+					<div class="col-xs-12 namebackgrd">
+						<h1>David's Math Page</h1>
+					</div>
+				</div>
+				
+				<br> <br> <br> <br> 			
+		</div>
+	</header>
+
+	<section class="container-fluid mathbackgrd">
+		<div class="row math">
+			<div class="col-xs-1">
+				<br>
+			</div>			
+			<div class="col-xs-4">
+				<h2 id="math_tricks">Math Trick:</h2>
+				<br>
+				<img class="math_image" src="img/mathtrick1.jpg" alt="1. Pick any whole number. 2. Rearrange the digits in any order. 3. Subtract the smaller number from the larger number. 4. Rearrange the digits in any order. 5. Circle any digit that is not a zero.">
+				<br> <br>
+				<button onclick="App2.launch()" class="math_button btn btn-lg btn-danger">Click to try it</button> <br/> <br/>	
+				<br/>
+				<span class="displayText">Your uncircled digits were </span> <span id="userdigits"></span> 
+				<span class="displayText">. You circled a </span> <span id="circled_digit"></span> <span class="displayText">.</span> <br/>		
+			</div>
+			<div class="col-xs-2">
+				<br>
+				<span class="displayText3">Getting your GPS location...</span>
+				<br>
+				<span class="displayText4">Location acquired!</span>
+				<br> <br>
+				<span class="displayText4">Connecting to Dept. of Defense satellites...</span>
+				<br>
+				<span class="displayText5">Authentication complete!</span>
+				<br> <br>
+				<span class="displayText5">Zooming in on your location...</span>
+				<br>
+				<span class="displayText6">Target found!</span>
+				<br> <br>
+				<span class="displayText6">Initializing 'see through wall' technology...</span>
+				<br>
+				<span class="displayText7">Initialized!</span>
+				<br> <br>
+				<span class="displayText7">Focusing camera lens... </span>
+				<br>
+				<span class="displayText8">Answer acquired! </span>
+				<br> <br>
+			</div>	
+			<div class="col-xs-4">
+				<h2 id="quad_eqn">Quadratic Equation Calculator:</h2>
+				<br>
+				<img class="eqn_image" src="img/quad_eqn.jpg" alt="A times x squared plus B times x plus c equals zero.">
+				<br>
+				<button onclick="App.launch()" class="math_button btn btn-lg btn-danger">Click to calculate</button> <br/> <br/>	
+				<br/>
+				<span class="displayText2">A = </span> <span id="Aterm"></span> <span class="displayText2">,  B = </span> <span id="Bterm"></span> <span class="displayText2">,  C = </span> <span id="Cterm"></span><br>
+				<span class="displayText2">X = </span> <span id="Xterm"></span> <br/>		
+			</div>	
+			<div class="col-xs-1">
+				<br>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer_style">
+		<div class="container-fluid">
+			<div class="row">
+				<p class="col-xs-12 paragraph">Contact information: 
+					<a href="mailto:S528390@nwmissouri.edu">
+					S528390@nwmissouri.edu
+					</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="Quadratic_eqn.js"></script>
+	<script src="Math_trick.js"></script>
+</body>
+</html>
